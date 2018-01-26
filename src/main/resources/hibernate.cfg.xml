@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://10.10.1.131:13306/gpstest</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.swz.skankhunt.domain.p.AlarmconfigEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.AlarmrecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.BasicdataEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.BuslineEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.BuslineconfigEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.BuslinepointEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.BusstationEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.CheckrecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.DepartmentEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.DrivercardrecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.DriverinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.EwaybillEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.FuelchangerecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.FuelconsumptionEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.FunctionmodelEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.GovplatformmsgEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.GpsinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.GpsmileageEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.GpsrealdataEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.HisalarmrecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.IndustrytypeEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.Jt809CommandEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.LinesegmentEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.MapareaEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.MapareabindingEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.MediaitemEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.MemberinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.MileagestatisticEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.NewalarmEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.OnlinerecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.OnlinestatisticEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.OperationlogEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.PlatforminfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.PlatformstateEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.RegionEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.RoleEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.RolefuncEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.RoutesegmentEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.SpeedrecorderEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.SystemconfigEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.TerminalEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.TerminalcommandEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.TerminalparamEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UserEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UserdepartmentEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UsergpsinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UsergpsrealdataEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UserinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.UserroleEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehicleEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehicleinfomodifyrecordEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehicleonlinerateEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehiclerecorderEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehicleregisterinfoEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.VehicletypeEntity"/>
+    <mapping class="com.swz.skankhunt.domain.p.WarnmsgurgtodoreqEntity"/>
+    <mapping resource="com/swz/skankhunt/domain/p/AlarmconfigEntity.hbm.xml"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
+
+<!--
+实际上这个是没用的，只是为了生成bean而存在-->
